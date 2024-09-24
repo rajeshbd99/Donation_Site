@@ -96,7 +96,28 @@
                     </div>
                 </div>
             </section>
-            
+            <!-- History Section -->
+            <section id="history-section" class="hidden">
+                <h2 class="text-2xl font-bold text-center mb-8">Donation History</h2>
+                <ul id="history-list" class="space-y-4">
+                </ul>
+            </section>
+        </div>
+        <!-- Modal Section -->
+        <div id="donation-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div class="bg-white rounded-lg p-6 shadow-lg w-full max-w-md">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-black mb-4">Congrats!</h2>
+                    <div>
+                        <img src="./assets/coin.png" alt="Coin" class="w-16 h-16 mx-auto">
+                    </div>
+                    <p class="text-lg font-semibold text-gray-500 mt-4">You Have Donated for Humankind</p>
+                    <p class="text-2xl font-bold text-black">Successfully</p>
+                    <button id="close-modal-btn" class="mt-6 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg">
+                        Close Confirmation
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
 
