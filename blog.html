@@ -29,10 +29,46 @@
         </div>
     </nav>
     <main class="mt-40 font-serif">
-        <div class="m-10 p-2">
+        <div class="m-10 p-2 container mx-auto">
             <h1 class="text-5xl font-bold ">Important FAQ</h1>
         </div>
-        
+        <div class="container mx-auto">
+            <div class=" collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">What is the Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                  <p class="text-justify">
+                    The Document Object Model (DOM) is a programming interface that represents the structure of web documents as a tree of objects, allowing developers to access and manipulate the content, structure, and style of a web page. In the DOM, each part of the document, such as elements, attributes, and text, corresponds to a node in this tree structure. This hierarchical representation enables dynamic manipulation of the document using programming languages like JavaScript, which can add, remove, or modify elements and respond to user events in real-time. The DOM is designed to be language-independent, meaning that while JavaScript is most commonly used to interact with it, other programming languages can also work with the DOM. It provides a standard API for navigating the document structure, selecting elements, changing their content, and managing events. Most modern web browsers support the DOM, making it a universal tool for creating dynamic and interactive web applications that enhance user experience by allowing real-time updates and interactivity on web pages.
+                </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-2xl font-bold">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-justify">Elements from the DOM can be selected using various methods provided by the JavaScript API. One common method is getElementById, which retrieves an element based on its unique ID, for example, document.getElementById('elementId'). Another method, getElementsByClassName, selects all elements that share a specified class name, returning a live HTMLCollection. The getElementsByTagName method retrieves all elements of a particular tag name. For greater flexibility, querySelector selects the first element that matches a specified CSS selector, while querySelectorAll returns a static NodeList of all matching elements. Additionally, the children property can be used to access all child elements of a specific parent element. These methods are essential for dynamically interacting with web page elements, enabling changes to content, styles, or behaviors in response to user actions or other conditions.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-2xl font-bold">What is event delegation in the context of the DOM, and why is it useful ?</div>
+                <div class="collapse-content">
+                  <p class="text-justify"> 
+                    Event delegation is a programming technique within the context of the DOM that enables a single event listener to manage events for multiple child elements by attaching the listener to a parent element. Instead of adding individual event listeners to each child, the parent captures events as they bubble up from the child elements, leading to more efficient event handling. This technique is particularly useful for several reasons: it improves performance by reducing the number of event listeners, minimizes memory usage, and enhances responsiveness when dealing with a large number of elements. Additionally, event delegation allows for handling events on dynamically added elements, as new child elements automatically inherit the event handling from the parent. This approach leads to cleaner, more maintainable code by centralizing event management in one location, making it easier to add, remove, or modify event behaviors. Overall, event delegation enhances performance, simplifies event management, and provides greater flexibility for working with dynamic content in the DOM.
+                </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-2xl font-bold">How do you manipulate an element's attributes and styles using the DOM ?</div>
+                <div class="collapse-content">
+                <p class="text-justify">
+                    Manipulating an element's attributes and styles using the DOM can be achieved through various methods provided by the JavaScript API. To change an element's attributes, the setAttribute method can be used, allowing the specification of the attribute name and its new value, such as element.setAttribute('src', 'image.jpg') to update an image source. Conversely, the getAttribute method retrieves the current value of an attribute, while the removeAttribute method can be employed to delete an attribute altogether. For manipulating styles, the style property of an element can be accessed, enabling direct modification of CSS properties. For example, element.style.color = 'red' changes the text color to red, and multiple styles can be set in one go, such as element.style.cssText = 'color: blue; background-color: yellow;'. Additionally, class manipulation can be done using the classList property, which provides methods like add, remove, and toggle to manage CSS classes efficiently. Overall, these methods allow for dynamic changes to an element's attributes and styles, enhancing interactivity and visual presentation on web pages.
+                </p>
+                </div>
+              </div>
+        </div>
     </main>
 </body>
 
