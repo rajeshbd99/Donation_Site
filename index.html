@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .lexend{
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+          }
+    </style>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 lexend">
     <!-- Navbar -->
     <nav class="bg-red-50 shadow-lg fixed w-full h-28 z-10 top-0">
         <div class="container mx-auto p-6 flex justify-between items-center">
@@ -25,11 +39,11 @@
         </div>
     </nav>
 
-    <!-- Sticky Navigation Buttons -->
-    <div class="sticky top-28 z-40 bg-white shadow-md h-24 py-3 ">
+    <!-- Sticky Navbar -->
+    <div class="sticky top-28 z-40 bg-white bg-opacity-80 backdrop-blur-md  shadow-md h-24 py-3 ">
         <div class="container mx-auto px-6 py-4 flex justify-center space-x-4">
-            <button id="donation-btn" class="px-6 py-2 bg-green-400 text-white rounded-lg">Donation</button>
-            <button id="history-btn" class="px-6 py-2 bg-white text-black border border-gray-300 rounded-lg">History</button>
+            <button id="donation-btn" class="px-6 py-2 bg-green-400 text-white  font-bold rounded-lg">Donation</button>
+            <button id="history-btn" class="px-6 py-2 bg-gray-400 text-black font-bold border border-gray-300 rounded-lg">History</button>
         </div>
     </div>
 
