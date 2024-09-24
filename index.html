@@ -12,14 +12,14 @@
         <div class="container mx-auto p-6 flex justify-between items-center">
             <a href="blog.html" class="px-6 py-2 bg-green-400 text-Black font-bold rounded-lg">Blog</a>
             <h1 class="text-2xl font-bold flex items-center">
-                <span class="mr-2">
+                <span class="mr-2 sm: pl-5">
                     <img src="./assets/logo.png" alt="" srcset="">
                 </span> Donate Bangladesh
             </h1>
             <div class="flex items-center space-x-4">
                 <span class="text-lg font-bold flex">
                     <img src="./assets/coin.png" alt="" srcset="">
-                    <span id="account-balance">5500 BDT</span>
+                    <span id="account-balance" class="pl-2">5500 BDT</span>
                 </span>
             </div>
         </div>
@@ -76,6 +76,24 @@
                         </div>
                     </div>
                     
+                    <!-- card 3 -->
+                    <div id="card-3" class="mt-5 mb-14 bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row items-center">
+                        <img src="./assets/quota-protest.png" alt="Aid for Injured" class="md:w-1/3 h-full p-3">
+                        <div class="p-6 w-2/3">
+                            <div class="mb-4">
+                                <div class="mb-4 flex">
+                                    <div class="flex px-6 py-2 bg-slate-100 border border-gray-300 rounded-lg">
+                                        <img src="./assets/coin.png" alt="" srcset="">
+                                    <span class="text-yellow-500 font-bold text-xl pl-3 "><span id="card-1-amount">2400 BDT</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Aid for Injured in the Quota Movement</h3>
+                            <p class="text-gray-600 mb-4">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                            <input type=" " placeholder="Write Donation Amount" class="border rounded-lg px-4 py-2 w-full mb-4">
+                            <button onclick="handleDonation('card-3')" class="bg-green-400 text-white px-4 py-2 rounded-lg w-full">Donate Now</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             
