@@ -34,3 +34,39 @@ function showModal() {
 closeModalBtn.addEventListener('click', () => {
     donationModal.classList.add('hidden');
 });
+
+// Donation Input
+function handleDonation(cardId) {
+    const card = document.getElementById(cardId);
+    const inputElement = card.querySelector('input');
+    const donationValue = parseFloat(inputElement.value);
+
+    if (validateDonation(donationValue)) {
+        const currentBalance = parseFloat(balanceElement.textContent);
+        const currentAmountElement = card.querySelector('span[id^="card-"]');
+
+        if (donationValue <= currentBalance) {
+            const updatedBalance = currentBalance - donationValue;
+            balanceElement.textContent = updatedBalance.toFixed(2) + " BDT";
+            const currentAmount = parseFloat(currentAmountElement.textContent);
+            currentAmountElement.textContent = (currentAmount + donationValue).toFixed(2) + " BDT";
+
+            showModal();
+            addHistoryLog(cardId, donationValue);
+        } else {
+            alert('Insufficient balance');
+        }
+    } else {
+        alert('Invalid donation amount');
+    }
+
+    inputElement.value = '';
+}
+
+// Validation
+function validateDonation(donation) {
+    return donation && !isNaN(donation) && parseFloat(donation) > 0;
+}
+
+
+
