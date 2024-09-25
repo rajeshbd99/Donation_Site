@@ -68,5 +68,23 @@ function validateDonation(donation) {
     return donation && !isNaN(donation) && parseFloat(donation) > 0;
 }
 
+// History Section
+function addHistoryLog(cardId, donationValue) {
+    const historyList = document.getElementById('history-list');
+    const time = new Date().toString();
+    const cardTitle = document.querySelector(`#${cardId} h3`).textContent;
+    const historyItem = document.createElement('li');
+    historyItem.innerHTML = `
+        <div class="p-4 md:p-8 border-gray-400 border rounded-xl mt-4 md:mt-8">
+            <div class="space-y-3">
+                <h2 class="text-text-primary font-bold text-xl">
+                    <span>${donationValue}</span> BDT is Donated to <span>${cardTitle}</span>
+                </h2>
+                <p class="text-text-gray">Date: <span>${time}</span></p>
+            </div>
+        </div>
+    `;
 
+    historyList.appendChild(historyItem);
+}
 
