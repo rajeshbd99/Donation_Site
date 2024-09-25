@@ -25,3 +25,12 @@ historyBtn.addEventListener('click', () => {
     donationBtn.classList.remove('bg-green-400', 'text-white');
 });
 
+
+// Open and close Modal
+function showModal() {
+    donationModal.classList.remove('hidden');
+}
+
+closeModalBtn.addEventListener('click', () => {
+    donationModal.classList.add('hidden');
+});
